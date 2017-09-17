@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sistema de multas</title>
+</head>
+<body>
+<form action="" method="post">
+<center><h2>CADASTRO DE INFRAÇÕES</h2></center><br>
+<label>Placa:</label><input name="placa" type="text">
+<label id="renavam">Renavam:</label><input name="renavam" type="text" >
+<label>Modelo:</label><select name="modelo" size="1">
+</select>
+<label>Marca:</label><select name="marca" size="1">
+</select>
+
+<label>Categoria:</label><select name="categoria" size="1">
+<option value="MOTOCICLETA">MOTOCICLETA</option>
+</select>
+
+br>
+
+<legend><h4>Dados do Proprietário</h4></legend>
+<label>Nome:</label><input type="text"/>
+<label>CPF/CNPJ:</label><input type="text"size="18"/>
+<label>Data Compra:</label><input type="date"/>
+
+<br>
+<legend><h4>Infrações</h4></legend>
+  <table border="1">
+  <tr bgcolor="#CCCCCC" style="font-size:18px;">
+<th width="120">CÓDIGO</th>
+<th width="450">DESCRIÇÃO</th>
+<th width="100">PONTOS</th>
+<th width="130">VALOR</th>
+<th width="180">DATA</th>
+<th width="140">HORA</th>
+</tr>
+<tr style="font-size:14px;text-align:left;">
+<th width="120">33</th>
+<th width="450">Estacionar em locar proibido</th>
+<th width="100">5</th>
+<th width="130">R$ 85,90</th>
+<th width="180">01/06/2009</th>
+<th width="140">12:05</th>
+</tr>
+<tr style="font-size:14px;text-align:left;">
+<th width="120">33</th>
+<th width="450">Estacionar em locar proibido</th>
+<th width="100">5</th>
+<th width="130">R$ 85,90</th>
+<th width="180">05/06/2017</th>
+<th width="140">12:05</th>
+</tr>
+<tr style="font-size:14px;text-align:left;">
+<th width="120">45</th>
+<th width="450">Dirigir acima do limite permitido</th>
+<th width="100">7</th>
+<th width="130">R$ 930,55</th>
+<th width="180">12/06/2017</th>
+<th width="140">09:55</th>
+</tr>
+</table>
+<form method="post" action="#">
+<input type="submit" value="ADICIONAR"/>
+
+</form>
+</fieldset>
+<form action="#" method="post">
+<input type="submit" value="Salvar"/>
+</form>
+<form action="#" method="get">
+<input type="submit" value="Imprimir""/>
+</form>
+<form method="delete">
+<input type="submit" value="Cancelar"/>
+</form>
+</form>
+
+</body>
+</html>
