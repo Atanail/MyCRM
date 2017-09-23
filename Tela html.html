@@ -5,6 +5,8 @@
 <body>
 <form action="" method="post">
 <center><h2>CADASTRO DE INFRAÇÕES</h2></center><br>
+<fieldset><br>
+<h3>Dados do Veículo</h3>
 <label>Placa:</label><input name="placa" type="text">
 <label id="renavam">Renavam:</label><input name="renavam" type="text">
 <label>Modelo:</label><select name="modelo" size="1">
@@ -13,19 +15,22 @@
 <label>Marca:</label><select name="marca" size="1">
 <option value="MOTOCICLETA">HONDA</option>
 </select>
-
 <label>Categoria:</label><select name="categoria" size="1">
 <option value="MOTOCICLETA">MOTOCICLETA</option>
-</select>
+</select><br>
+</fieldset><br>
 
-<legend><h4>Dados do Proprietário</h4></legend>
+<fieldset><br>
+<h3>Dados do Proprietário</h3></legend>
 <label>Nome:</label><input type="text"/>
 <label>CPF/CNPJ:</label><input type="text"size="18"/>
 <label>Data Compra:</label><input type="date"/>
-
+</fieldset>
 <br>
-<legend><h4>Infrações</h4></legend>
+
+<fieldset  <br><h4> Infrações </h4> </legend>
   <table border="1">
+  <align="center">
   <tr bgcolor="#CCCCCC" style="font-size:18px;">
 <th width="120">CÓDIGO</th>
 <th width="450">DESCRIÇÃO</th>
@@ -63,5 +68,6 @@
 <input type="submit" value="SALVAR">
 <input type="submit" value="IMPRIMIR">
 <input type="submit" value="CANCELAR">
+</fieldset>
 </body>
 </html>
