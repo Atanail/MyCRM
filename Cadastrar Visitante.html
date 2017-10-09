@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -16,32 +15,38 @@
 </head>
 <body> <div id=tudo align=center>
   
-  
 
-  <h1 align=center div id="Titulo">Cadastrar visitante
-  </h1>
   
+  <h1 align=center div id="Titulo">Cadastrar visitante </h1>
+  
+  <form action="#" method="post">
+  
+  NOME: <br>
   <input div id="CADASTRO"
+  required=”required” name="Preencha o campo!"
          type=text
-         value="NOME: "
+         value=""
          style="background:white
          !important;
          solid #ba 
          !important; 
          font-size:15px"><BR><BR>
   
+	  RG: <br>
     <input div id="CADASTRO"
+	required=”required” name="Preencha o campo!"
          type=text
-         value="RG: "
+         
          style="background:white
          !important;
          solid #ba 
          !important; 
          font-size:15px"><BR><BR>
 
+		 CPF: <BR>
  <input div id="CADASTRO"
+ required=”required” name="Preencha o campo!"
          type=text
-         value="CPF:"
          style="background:white
          !important;
          solid #ba 
@@ -50,20 +55,19 @@
 </textarea>
   
  <BR><BR>
-    <input type="date">
+ 
+   DATA/HORA:<br>
+    <input div id="CODIGO" type="date">
+	
     <input div id="CODIGO"
-         type=text
-         value="HORA:"
-         style="background:white
-         !important;
-         solid #ba 
-         !important; 
-         font-size:15px 
-         !important;
-         -webkit-border-radius:5px;"><BR><BR>
+         type="TIME"
+		 
+        <BR><BR><BR>
 
 <select  div id="CODIGO1"
-         type=button value="buscar"
+required=”required” 
+name="Preencha o campo!"
+         type="button"
          style="background:white
          !important;
          solid #ba 
@@ -71,6 +75,7 @@
          font-size:15px 
          !important;
          -webkit-border-radius:5px;">
+		 
          <option>BLOCO</option>
          <option value="http://">1</option>
          <option value="http://">2</option>
@@ -79,27 +84,30 @@
 </textarea>
     
 <br><br>
-    
- <input div id="CODIGO"
-         type=text
-         value="N° AP.:"
-         style="background:white
+      N° AP: <br>
+		<input div id="CODIGO"
+         type="text"
+         style="background:white"
+		 required=”required” name="Preencha o campo!"
          !important;
          solid #ba 
          !important; 
          font-size:15px 
          !important;
          -webkit-border-radius:5px;">
-
-  <input 
-         type=button value="BUSCAR"
+		 <BR><BR>
+		 
+		 <input 
+         type="submit" value="BUSCAR"  
          style="background:white
          !important;
          solid #ba 
          !important; 
          font-size:15px 
          !important;
-         -webkit-border-radius:5px;"> <BR><BR>
+         -webkit-border-radius:5px;"> 
+		 
+		 <BR><BR>
 		 </input>
    
   <table 
