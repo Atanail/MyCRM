@@ -5,9 +5,8 @@
   <title>JS Bin</title>
 </head>
 <body>
-<!DOCTYPE html>
 <html>
-  <link href="C:\Users\Junior\Desktop\Design.css" rel="stylesheet">
+  <link href="C:\Users\unicesumar\Desktop\Design.css" rel="stylesheet">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -21,9 +20,11 @@
   
   <form action="#" method="post">
   
-  NOME: <br>
+	NOME: <br>
+	
   <input div id="CADASTRO"
-  required=”required” name="Preencha o campo!"
+		 required=”required” 
+		 name="Preencha o campo!"
          type=text
          value=""
          style="background:white
@@ -32,20 +33,22 @@
          !important; 
          font-size:15px"><BR><BR>
   
-	  RG: <br>
-    <input div id="CADASTRO"
-	required=”required” name="Preencha o campo!"
+	RG: <br>
+	
+		 <input div id="CADASTRO"
+		 required=”required” 
+		 name="Preencha o campo!"
          type=text
-         
          style="background:white
          !important;
          solid #ba 
          !important; 
          font-size:15px"><BR><BR>
-
-		 CPF: <BR>
- <input div id="CADASTRO"
- required=”required” name="Preencha o campo!"
+	
+	CPF: <BR>
+	
+		 <input div id="CADASTRO"
+		 required=”required” name="Preencha o campo!"
          type=text
          style="background:white
          !important;
@@ -57,16 +60,21 @@
  <BR><BR>
  
    DATA/HORA:<br>
-    <input div id="CODIGO" type="date">
+    <input div id="CODIGO" type="date"
+	required=”required” 
+		 name="Preencha o campo!">
 	
-    <input div id="CODIGO"
+	
+    <input 
+		 div id="CODIGO"
          type="TIME"
-		 
-        <BR><BR><BR>
+		 required=”required” 
+		 name="Preencha o campo!">
+        <BR><BR>
 
 <select  div id="CODIGO1"
-required=”required” 
-name="Preencha o campo!"
+		 required=”required” 
+		 name="Preencha o campo!"
          type="button"
          style="background:white
          !important;
@@ -84,11 +92,13 @@ name="Preencha o campo!"
 </textarea>
     
 <br><br>
+
       N° AP: <br>
 		<input div id="CODIGO"
          type="text"
          style="background:white"
-		 required=”required” name="Preencha o campo!"
+		 required=”required” 
+		 name="Preencha o campo!"
          !important;
          solid #ba 
          !important; 
@@ -97,7 +107,11 @@ name="Preencha o campo!"
          -webkit-border-radius:5px;">
 		 <BR><BR>
 		 
-		 <input 
+		 <input onclick="myFunction()"
+		 <script
+		 function myFunction() {
+		 alert("I am an alert box!");
+		 }
          type="submit" value="BUSCAR"  
          style="background:white
          !important;
@@ -108,7 +122,7 @@ name="Preencha o campo!"
          -webkit-border-radius:5px;"> 
 		 
 		 <BR><BR>
-		 </input>
+		 
    
   <table 
          border=1 style="background:white 
@@ -124,7 +138,6 @@ name="Preencha o campo!"
         <td>96656782 </td>
 		
 		
-
         </tr>
         <tr>
         <td>CLEIDE LOPES</td>
@@ -146,7 +159,7 @@ name="Preencha o campo!"
 </select>
    
         <input
-         type=button value="LIBERAR CATRACA"
+         type=submit value="LIBERAR CATRACA"
          style="background:white
          !important;
          solid #ba 
@@ -155,28 +168,27 @@ name="Preencha o campo!"
          !important;
          -webkit-border-radius:5px;"><BR><BR>
   
-      <input
-         type=button value="CADASTRAR VISITANTE"
-         style="background:white
-         !important;
-         solid #ba 
-         !important; 
-         font-size:15px 
-         !important;
-         -webkit-border-radius:5px;">
+<button 
+		onclick="myFunction1()"
+		-webkit-border-radius:5px;>CADASTRAR
+</button>
+
+<script>
+		function myFunction1() {
+		confirm("DADOS CADASTRADOS COM SUCESSO");
+}
+</script>
    
+      <BR><br>
+<button 
+		onclick="myFunction()"
+		-webkit-border-radius:5px;>APAGAR
+</button>
 
-      </input><BR><BR><BR>
-    
-          <input
-         type=button value="APAGAR"
-         style="background:white
-         !important;
-         solid #ba 
-         !important; 
-         font-size:15px 
-         !important;
-         -webkit-border-radius:5px;">
-
+<script>
+function myFunction() {
+    alert("DESEJA MESMO APAGAR OS CAMPOS?");
+}
+</script>
 </body>
 </html>
